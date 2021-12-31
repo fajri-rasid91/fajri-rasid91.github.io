@@ -188,7 +188,7 @@ html body .about .img-cinnamon-about {
 
 html body .about .carousel-control-prev,
 html body .about .carousel-control-next {
-  width: 5%;
+  width: 12%;
 }
 
 html body .product {
@@ -434,12 +434,6 @@ html body .scroll-top-btn:hover {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
-  }
-  .about .row .carousel .carousel-inner .carousel-item .carousel-flex div p {
-    text-align: center !important;
-  }
-  .about .row .carousel .carousel-inner .carousel-item .carousel-flex div p span {
-    text-align: center !important;
   }
   .about .row .img-cinnamon-about {
     max-width: 75% !important;
