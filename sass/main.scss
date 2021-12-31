@@ -190,8 +190,8 @@ html {
 					"gal-1 gal-3 gal-2"
 					"gal-4 gal-3 gal-5"
 					"gal-6 gal-6 gal-5";
-				grid-template-columns: repeat(auto-fit, minmax(0.5fr, 1fr));
-				grid-template-rows: repeat(auto-fit, minmax(0.5fr, 1fr));
+				grid-template-columns: repeat(auto-fit, 1fr);
+				grid-template-rows: repeat(auto-fit, 1fr);
 				gap: 12px;
 
 				img {

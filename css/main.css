@@ -200,10 +200,10 @@ html body .product .gallery-product {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "gal-1 gal-3 gal-2" "gal-4 gal-3 gal-5" "gal-6 gal-6 gal-5";
-  -ms-grid-columns: (minmax(0.5fr, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(0.5fr, 1fr));
-  -ms-grid-rows: (minmax(0.5fr, 1fr))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(0.5fr, 1fr));
+  -ms-grid-columns: (1fr)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 1fr);
+  -ms-grid-rows: (1fr)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 1fr);
   gap: 12px;
 }
 
@@ -445,6 +445,12 @@ html body .scroll-top-btn:hover {
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
             justify-content: flex-end !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .product .gallery-product {
+        grid-template-areas: "gal-1 gal-3" "gal-4 gal-3" "gal-6 gal-6" "gal-2 gal-5" "gal-2 gal-5" !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
