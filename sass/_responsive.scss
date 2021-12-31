@@ -37,19 +37,14 @@
 	// about
 	.about {
 		.row {
-			.carousel {
-				.carousel-inner {
-					.carousel-item {
-						.carousel-flex {
-							flex-direction: column-reverse !important;
-						}
-					}
-				}
-			}
-
 			.img-cinnamon-about {
-				max-width: 75% !important;
+				max-width: 70% !important;
 			}
+		}
+
+		.carousel-control-prev,
+		.carousel-control-next {
+			width: 10% !important;
 		}
 	}
 

@@ -200,10 +200,10 @@ html body .product .gallery-product {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "gal-1 gal-3 gal-2" "gal-4 gal-3 gal-5" "gal-6 gal-6 gal-5";
-  -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  -ms-grid-rows: (minmax(50px, 1fr))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  -ms-grid-columns: (1fr)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 1fr);
+  -ms-grid-rows: (1fr)[auto-fit];
+      grid-template-rows: repeat(auto-fit, 1fr);
   gap: 12px;
 }
 
@@ -429,14 +429,12 @@ html body .scroll-top-btn:hover {
   html body section .section-title {
     text-align: center !important;
   }
-  .about .row .carousel .carousel-inner .carousel-item .carousel-flex {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
-  }
   .about .row .img-cinnamon-about {
-    max-width: 75% !important;
+    max-width: 70% !important;
+  }
+  .about .carousel-control-prev,
+  .about .carousel-control-next {
+    width: 10% !important;
   }
   .product .img-cinnamon-product {
     margin-top: 16px !important;
