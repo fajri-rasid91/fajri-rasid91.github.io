@@ -204,7 +204,7 @@ html body .product .gallery-product {
       grid-template-columns: repeat(auto-fit, 1fr);
   -ms-grid-rows: (1fr)[auto-fit];
       grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 12px;
+  gap: 15px;
 }
 
 html body .product .gallery-product img {
@@ -213,8 +213,8 @@ html body .product .gallery-product img {
   border-radius: 12px;
   -webkit-box-shadow: 0 0 5px 2.5px rgba(160, 160, 160, 0.7);
           box-shadow: 0 0 5px 2.5px rgba(160, 160, 160, 0.7);
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -222,8 +222,8 @@ html body .product .gallery-product img {
 html body .product .gallery-product img:hover {
   -webkit-box-shadow: 0 0 10px 5px rgba(160, 160, 160, 0.4);
           box-shadow: 0 0 10px 5px rgba(160, 160, 160, 0.4);
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 html body .product .gallery-product .gal-1 {
@@ -307,8 +307,8 @@ html body .team .img-profile {
 }
 
 html body .team .img-profile:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 html body .team blockquote::before,
@@ -436,9 +436,6 @@ html body .scroll-top-btn:hover {
   .product .img-cinnamon-product {
     margin-top: 16px !important;
   }
-  .product .gallery-product {
-        grid-template-areas: "gal-1 gal-3" "gal-4 gal-3" "gal-6 gal-6" "gal-2 gal-5" "gal-2 gal-5" !important;
-  }
   .team .row .img-profile-container-1 {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
@@ -448,6 +445,18 @@ html body .scroll-top-btn:hover {
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
             justify-content: flex-end !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product .gallery-product {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
