@@ -45,12 +45,8 @@
 		}
 
 		.gallery-product {
-			grid-template-areas:
-				"gal-1 gal-3"
-				"gal-4 gal-3"
-				"gal-6 gal-6"
-				"gal-2 gal-5"
-				"gal-2 gal-5" !important;
+			display: flex !important;
+			flex-direction: column !important;
 		}
 	}
 
